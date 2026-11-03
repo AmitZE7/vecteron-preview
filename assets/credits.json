@@ -1,27 +1,5 @@
 [
   {
-    "file": "assets/campus-aerial-2.jpg",
-    "media": "image",
-    "ref": "commons:173551145",
-    "title": "Wenatchee washington azure datacenter aerial 3",
-    "creator": "Tedder",
-    "creatorUrl": null,
-    "date": "2025-08-22",
-    "license": "CC BY 4.0",
-    "licenseCode": "by",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Wenatchee_washington_azure_datacenter_aerial_3.jpg",
-    "via": "Wikimedia Commons",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Wenatchee_washington_azure_datacenter_aerial_3.jpg/1920px-Wenatchee_washington_azure_datacenter_aerial_3.jpg",
-    "width": 1920,
-    "height": 1440,
-    "bytes": 875171,
-    "credit": "\"Wenatchee washington azure datacenter aerial 3\" by Tedder, CC BY 4.0, via Wikimedia Commons",
-    "notes": [],
-    "saved": "2026-11-03T14:31:25.194Z"
-  },
-  {
     "file": "assets/solar.jpg",
     "media": "image",
     "ref": "commons:182066156",
@@ -67,6 +45,16 @@
   },
   {
     "file": "assets/campus-night.jpg",
+    "media": "image",
+    "source": "AI-generated concept visualisation supplied by the client (2026-11-03)",
+    "license": "client-supplied",
+    "creditRequired": false,
+    "notes": [
+      "Labelled on the page as a concept visualisation."
+    ]
+  },
+  {
+    "file": "assets/campus-gate.jpg",
     "media": "image",
     "source": "AI-generated concept visualisation supplied by the client (2026-11-03)",
     "license": "client-supplied",
