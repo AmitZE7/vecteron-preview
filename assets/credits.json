@@ -46,50 +46,6 @@
     "saved": "2026-11-03T14:31:25.194Z"
   },
   {
-    "file": "assets/hero-campus.jpg",
-    "media": "image",
-    "ref": "commons:173551153",
-    "title": "Wenatchee washington azure datacenter aerial 2",
-    "creator": "Tedder",
-    "creatorUrl": null,
-    "date": "2025-08-22",
-    "license": "CC BY 4.0",
-    "licenseCode": "by",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Wenatchee_washington_azure_datacenter_aerial_2.jpg",
-    "via": "Wikimedia Commons",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Wenatchee_washington_azure_datacenter_aerial_2.jpg/1920px-Wenatchee_washington_azure_datacenter_aerial_2.jpg",
-    "width": 1920,
-    "height": 1440,
-    "bytes": 962960,
-    "credit": "\"Wenatchee washington azure datacenter aerial 2\" by Tedder, CC BY 4.0, via Wikimedia Commons",
-    "notes": [],
-    "saved": "2026-11-03T14:31:26.272Z"
-  },
-  {
-    "file": "assets/hall-exterior.jpg",
-    "media": "image",
-    "ref": "commons:136012644",
-    "title": "Facebook, Highway 126, Prineville - DPLA - fd9c0cae95b43c5864c55d3eef1bf5a6",
-    "creator": "Gary Halvorson, Oregon State Archives",
-    "creatorUrl": null,
-    "date": "8 July 2014",
-    "license": "CC BY 4.0",
-    "licenseCode": "by",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Facebook,_Highway_126,_Prineville_-_DPLA_-_fd9c0cae95b43c5864c55d3eef1bf5a6.jpg",
-    "via": "Wikimedia Commons",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Facebook%2C_Highway_126%2C_Prineville_-_DPLA_-_fd9c0cae95b43c5864c55d3eef1bf5a6.jpg/1920px-Facebook%2C_Highway_126%2C_Prineville_-_DPLA_-_fd9c0cae95b43c5864c55d3eef1bf5a6.jpg",
-    "width": 1920,
-    "height": 1282,
-    "bytes": 552673,
-    "credit": "\"Facebook, Highway 126, Prineville - DPLA - fd9c0cae95b43c5864c55d3eef1bf5a6\" by Gary Halvorson, Oregon State Archives, CC BY 4.0, via Wikimedia Commons",
-    "notes": [],
-    "saved": "2026-11-03T14:31:28.267Z"
-  },
-  {
     "file": "assets/solar.jpg",
     "media": "image",
     "ref": "commons:182066156",
@@ -112,5 +68,47 @@
       "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
     ],
     "saved": "2026-11-03T14:43:19.147Z"
+  },
+  {
+    "file": "assets/hero-hall.jpg",
+    "media": "image",
+    "ref": "commons:124451636",
+    "title": "Frontier supercomputer (12)",
+    "creator": "Oak Ridge National Laboratory",
+    "date": "2022",
+    "license": "CC BY 2.0",
+    "licenseCode": "by",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/wiki/File:Frontier_supercomputer_(12).jpg",
+    "via": "Wikimedia Commons",
+    "width": 3000,
+    "height": 2400,
+    "credit": "\"Frontier supercomputer (12)\" by Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons",
+    "notes": [
+      "Cropped to the centre of the aisle (1650x1031 from 3000x2400), resized to 2000x1250."
+    ],
+    "saved": "2026-11-03T18:40:00Z"
+  },
+  {
+    "file": "assets/hall-aerial.jpg",
+    "media": "image",
+    "ref": "commons:84181144",
+    "title": "Google Data Center, Council Bluffs Iowa (49062863796)",
+    "creator": "Chad Davis",
+    "date": "2019",
+    "license": "CC BY 2.0",
+    "licenseCode": "by",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/wiki/File:Google_Data_Center,_Council_Bluffs_Iowa_(49062863796).jpg",
+    "via": "Wikimedia Commons",
+    "width": 4000,
+    "height": 2250,
+    "credit": "\"Google Data Center, Council Bluffs Iowa\" by Chad Davis, CC BY 2.0, via Wikimedia Commons",
+    "notes": [
+      "Resized to 2400px wide."
+    ],
+    "saved": "2026-11-03T18:40:00Z"
   }
 ]
