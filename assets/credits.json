@@ -91,17 +91,13 @@
     "saved": "2026-11-03T18:40:00Z"
   },
   {
-    "file": "assets/hero-campus.jpg",
+    "file": "assets/hero-render.jpg",
     "media": "image",
-    "ref": "commons:173551144",
-    "title": "Wenatchee washington azure datacenter aerial 2",
-    "creator": "Tedder",
-    "license": "CC BY 4.0",
-    "licenseCode": "by",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Wenatchee_washington_azure_datacenter_aerial_2.jpg",
-    "via": "Wikimedia Commons",
-    "credit": "\"Wenatchee washington azure datacenter aerial 2\" by Tedder, CC BY 4.0, via Wikimedia Commons"
+    "source": "AI-generated concept visualisation supplied by the client (2026-11-03)",
+    "license": "client-supplied",
+    "creditRequired": false,
+    "notes": [
+      "Labelled on the page as a concept visualisation, not the final design."
+    ]
   }
 ]
