@@ -1,29 +1,5 @@
 [
   {
-    "file": "assets/aisle-white.jpg",
-    "media": "image",
-    "ref": "commons:120800147",
-    "title": "Racks Amravati Data Center",
-    "creator": "PiDatacenters",
-    "creatorUrl": null,
-    "date": "2021-08-17",
-    "license": "CC BY-SA 4.0",
-    "licenseCode": "by-sa",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg",
-    "via": "Wikimedia Commons",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Racks_Amravati_Data_Center.jpg/1920px-Racks_Amravati_Data_Center.jpg",
-    "width": 1920,
-    "height": 1281,
-    "bytes": 897476,
-    "credit": "\"Racks Amravati Data Center\" by PiDatacenters, CC BY-SA 4.0, via Wikimedia Commons",
-    "notes": [
-      "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
-    ],
-    "saved": "2026-11-03T14:18:35.869Z"
-  },
-  {
     "file": "assets/campus-aerial-2.jpg",
     "media": "image",
     "ref": "commons:173551145",
@@ -70,27 +46,6 @@
     "saved": "2026-11-03T14:43:19.147Z"
   },
   {
-    "file": "assets/hall-aerial.jpg",
-    "media": "image",
-    "ref": "commons:84181144",
-    "title": "Google Data Center, Council Bluffs Iowa (49062863796)",
-    "creator": "Chad Davis",
-    "date": "2019",
-    "license": "CC BY 2.0",
-    "licenseCode": "by",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Google_Data_Center,_Council_Bluffs_Iowa_(49062863796).jpg",
-    "via": "Wikimedia Commons",
-    "width": 4000,
-    "height": 2250,
-    "credit": "\"Google Data Center, Council Bluffs Iowa\" by Chad Davis, CC BY 2.0, via Wikimedia Commons",
-    "notes": [
-      "Resized to 2400px wide."
-    ],
-    "saved": "2026-11-03T18:40:00Z"
-  },
-  {
     "file": "assets/hero-render.jpg",
     "media": "image",
     "source": "AI-generated concept visualisation supplied by the client (2026-11-03)",
@@ -98,6 +53,26 @@
     "creditRequired": false,
     "notes": [
       "Labelled on the page as a concept visualisation, not the final design."
+    ]
+  },
+  {
+    "file": "assets/hall-interior.jpg",
+    "media": "image",
+    "source": "AI-generated concept visualisation supplied by the client (2026-11-03)",
+    "license": "client-supplied",
+    "creditRequired": false,
+    "notes": [
+      "Labelled on the page as a concept visualisation."
+    ]
+  },
+  {
+    "file": "assets/campus-night.jpg",
+    "media": "image",
+    "source": "AI-generated concept visualisation supplied by the client (2026-11-03)",
+    "license": "client-supplied",
+    "creditRequired": false,
+    "notes": [
+      "Labelled on the page as a concept visualisation."
     ]
   }
 ]
