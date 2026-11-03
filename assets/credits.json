@@ -70,27 +70,6 @@
     "saved": "2026-11-03T14:43:19.147Z"
   },
   {
-    "file": "assets/hero-hall.jpg",
-    "media": "image",
-    "ref": "commons:124451636",
-    "title": "Frontier supercomputer (12)",
-    "creator": "Oak Ridge National Laboratory",
-    "date": "2022",
-    "license": "CC BY 2.0",
-    "licenseCode": "by",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:Frontier_supercomputer_(12).jpg",
-    "via": "Wikimedia Commons",
-    "width": 3000,
-    "height": 2400,
-    "credit": "\"Frontier supercomputer (12)\" by Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons",
-    "notes": [
-      "Cropped to the centre of the aisle (1650x1031 from 3000x2400), resized to 2000x1250."
-    ],
-    "saved": "2026-11-03T18:40:00Z"
-  },
-  {
     "file": "assets/hall-aerial.jpg",
     "media": "image",
     "ref": "commons:84181144",
@@ -110,5 +89,19 @@
       "Resized to 2400px wide."
     ],
     "saved": "2026-11-03T18:40:00Z"
+  },
+  {
+    "file": "assets/hero-campus.jpg",
+    "media": "image",
+    "ref": "commons:173551144",
+    "title": "Wenatchee washington azure datacenter aerial 2",
+    "creator": "Tedder",
+    "license": "CC BY 4.0",
+    "licenseCode": "by",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/wiki/File:Wenatchee_washington_azure_datacenter_aerial_2.jpg",
+    "via": "Wikimedia Commons",
+    "credit": "\"Wenatchee washington azure datacenter aerial 2\" by Tedder, CC BY 4.0, via Wikimedia Commons"
   }
 ]
