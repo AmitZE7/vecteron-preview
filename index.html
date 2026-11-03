@@ -561,23 +561,33 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
     </div>
     <div class="ring-art rv">
       <svg viewBox="0 0 520 520" role="img" aria-label="Diagram of three concentric security rings: perimeter, building, data hall and rack">
-        <defs><radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2f7bff" stop-opacity=".35"/><stop offset="1" stop-color="#2f7bff" stop-opacity="0"/></radialGradient></defs>
+        <defs>
+          <radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2f7bff" stop-opacity=".45"/><stop offset="1" stop-color="#2f7bff" stop-opacity="0"/></radialGradient>
+          <path id="arc1t" d="M 40 260 A 220 220 0 0 1 480 260"/>
+          <path id="arc1b" d="M 40 260 A 220 220 0 0 0 480 260"/>
+          <path id="arc2t" d="M 100 260 A 160 160 0 0 1 420 260"/>
+          <path id="arc2b" d="M 100 260 A 160 160 0 0 0 420 260"/>
+          <path id="arc3t" d="M 160 260 A 100 100 0 0 1 360 260"/>
+        </defs>
         <circle cx="260" cy="260" r="250" fill="#0d1526" stroke="#2f7bff" stroke-width="2" stroke-dasharray="6 6"/>
-        <circle cx="260" cy="260" r="180" fill="#131d33" stroke="#5c9bff" stroke-width="2"/>
-        <circle cx="260" cy="260" r="110" fill="url(#rg)" stroke="#8fbaff" stroke-width="2"/>
-        <circle cx="260" cy="260" r="110" fill="#1a2746" fill-opacity=".9"/>
-        <g font-family="Manrope, Arial, sans-serif" text-anchor="middle" fill="#ffffff">
-          <text x="260" y="36" font-size="13" font-weight="700" letter-spacing="2" fill="#9aa5bb">RING 1 · PERIMETER</text>
-          <text x="260" y="104" font-size="13" font-weight="700" letter-spacing="2" fill="#cfe0ff">RING 2 · BUILDING</text>
-          <text x="260" y="176" font-size="13" font-weight="700" letter-spacing="2" fill="#ffffff">RING 3 · HALL &amp; RACK</text>
-          <g transform="translate(260 262)">
-            <rect x="-26" y="-30" width="52" height="60" rx="5" fill="#0b1220" stroke="#5c9bff" stroke-width="2"/>
-            <rect x="-18" y="-20" width="36" height="7" rx="2" fill="#2f7bff"/><rect x="-18" y="-8" width="36" height="7" rx="2" fill="#2f7bff"/><rect x="-18" y="4" width="36" height="7" rx="2" fill="#2f7bff"/><rect x="-18" y="16" width="36" height="7" rx="2" fill="#38d6ff"/>
-          </g>
-          <text x="260" y="330" font-size="15" font-weight="700">Your rack</text>
-          <text x="260" y="408" font-size="12.5" fill="#cfe0ff">Mantraps · card + biometric · SOC 24/7</text>
-          <text x="260" y="488" font-size="12.5" fill="#9aa5bb">3.4 m fence · thermal CCTV · armed response</text>
+        <circle cx="260" cy="260" r="190" fill="#131d33" stroke="#5c9bff" stroke-width="2"/>
+        <circle cx="260" cy="260" r="130" fill="#1a2746" stroke="#8fbaff" stroke-width="2"/>
+        <circle cx="260" cy="260" r="130" fill="url(#rg)"/>
+        <g font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+          <text fill="#9aa5bb"><textPath href="#arc1t" startOffset="50%">RING 1 · PERIMETER</textPath></text>
+          <text fill="#cfe0ff"><textPath href="#arc2t" startOffset="50%">RING 2 · BUILDING</textPath></text>
+          <text fill="#ffffff"><textPath href="#arc3t" startOffset="50%">RING 3 · HALL &amp; RACK</textPath></text>
         </g>
+        <g font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing=".6" text-anchor="middle">
+          <text fill="#9aa5bb"><textPath href="#arc1b" startOffset="50%">3.4 m fence · thermal CCTV · armed response 24/7</textPath></text>
+          <text fill="#cfe0ff"><textPath href="#arc2b" startOffset="50%">Mantraps · card + biometric · SOC 24/7</textPath></text>
+        </g>
+        <g transform="translate(260 248)">
+          <rect x="-26" y="-30" width="52" height="60" rx="5" fill="#0b1220" stroke="#5c9bff" stroke-width="2"/>
+          <rect x="-18" y="-20" width="36" height="7" rx="2" fill="#2f7bff"/><rect x="-18" y="-8" width="36" height="7" rx="2" fill="#2f7bff"/><rect x="-18" y="4" width="36" height="7" rx="2" fill="#2f7bff"/><rect x="-18" y="16" width="36" height="7" rx="2" fill="#38d6ff"/>
+        </g>
+        <text x="260" y="312" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#ffffff">Your rack</text>
+        <text x="260" y="334" font-family="Manrope, Arial, sans-serif" font-size="11.5" font-weight="500" text-anchor="middle" fill="#cfe0ff">Biometric + PIN · locked cabinet · audit log</text>
       </svg>
     </div>
   </div>
