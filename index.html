@@ -9,11 +9,11 @@
 <meta name="description" content="Meridix MDM1 is a 15 MW Tier III-design data centre campus in Modimolle, Limpopo, South Africa. Liquid-cooled, carrier-neutral and now reserving capacity for AI, disaster recovery and enterprise workloads.">
 <meta property="og:title" content="Meridix · 15 MW AI-ready data centre campus, Limpopo">
 <meta property="og:description" content="Tier III-design. Liquid cooling to 130 kW per rack. Three security rings. Reserving capacity now.">
-<meta property="og:image" content="assets/hero-aisle.jpg">
+<meta property="og:image" content="assets/hero-campus.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" href="assets/hero-aisle.jpg" as="image">
+<link rel="preload" href="assets/hero-campus.jpg" as="image">
 <style>
 :root {
   color-scheme: dark;
@@ -49,7 +49,6 @@ button { font: inherit; }
 .wrap { width: min(100% - 2 * var(--m), var(--max)); margin-inline: auto; }
 .wrap { padding-left: max(0px, calc(env(safe-area-inset-left, 0px) - var(--m))); padding-right: max(0px, calc(env(safe-area-inset-right, 0px) - var(--m))); }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-2); }
-.eyebrow::before { content: ""; width: 22px; height: 2px; background: var(--blue); }
 .light .eyebrow { color: var(--blue); }
 .h2 { font-size: clamp(30px, 4vw, 48px); margin-top: 14px; }
 .lead { font-size: clamp(17px, 1.4vw, 20px); color: var(--muted); max-width: 60ch; margin-top: 16px; }
@@ -86,24 +85,26 @@ section { padding-block: clamp(72px, 9vw, 120px); }
 /* ---------- hero ---------- */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; padding: 0; overflow: hidden; background: #050810; }
 .hero-bg { position: absolute; inset: 0; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 50%; transform: scale(1.08); animation: heroZoom 14s ease-out forwards; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 78%; transform: scale(1.08); animation: heroZoom 14s ease-out forwards; }
 @keyframes heroZoom { to { transform: scale(1); } }
-.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,8,16,.92) 0%, rgba(5,8,16,.7) 45%, rgba(5,8,16,.25) 100%), linear-gradient(180deg, rgba(5,8,16,.35) 0%, rgba(5,8,16,0) 30%, rgba(5,8,16,.9) 100%); }
-.hero-in { position: relative; z-index: 1; padding-block: 140px 72px; width: 100%; }
-.hero-tag { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border-radius: 999px; background: rgba(47,123,255,.14); border: 1px solid rgba(92,155,255,.35); color: #cfe0ff; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,8,16,.88) 0%, rgba(5,8,16,.55) 42%, rgba(5,8,16,.12) 100%), linear-gradient(180deg, rgba(5,8,16,.55) 0%, rgba(5,8,16,0) 32%, rgba(5,8,16,.92) 100%); }
+.hero-cap { position: absolute; z-index: 2; right: var(--m); bottom: 14px; max-width: 44ch; font-size: 12px; color: rgba(255,255,255,.6); text-align: right; }
+.hero-in { position: relative; z-index: 1; padding-block: 140px 56px; width: 100%; }
+.hero-kicker { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #cfe0ff; }
 .hero-tag i { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(53,208,127,.6); animation: pulse 2s infinite; }
 @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(53,208,127,0); } 100% { box-shadow: 0 0 0 0 rgba(53,208,127,0); } }
-.hero h1 { font-size: clamp(40px, 6.2vw, 84px); font-weight: 800; max-width: 13ch; margin-top: 22px; color: #fff; }
+.hero h1 { font-size: clamp(38px, 5.4vw, 74px); font-weight: 800; max-width: 15ch; margin-top: 18px; color: #fff; }
 .hero h1 span { color: var(--blue-2); }
 .hero p { font-size: clamp(17px, 1.5vw, 21px); color: #c7cfdd; max-width: 56ch; margin-top: 22px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
-.hero-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-top: 64px; border-top: 1px solid rgba(255,255,255,.14); }
+.hero-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-top: 56px; border-top: 1px solid rgba(255,255,255,.14); }
 .hero-stats div { padding: 22px 24px 0 0; }
 .hero-stats div + div { border-left: 1px solid rgba(255,255,255,.14); padding-left: 24px; }
 .hero-stats b { display: block; font-size: clamp(28px, 3vw, 40px); font-weight: 800; letter-spacing: -0.03em; color: #fff; line-height: 1; }
 .hero-stats b small { font-size: .55em; font-weight: 700; color: var(--blue-2); margin-left: 4px; }
 .hero-stats span { display: block; font-size: 14px; color: var(--muted); margin-top: 8px; }
 
+/* ---------- solutions ---------- */
 /* ---------- solutions ---------- */
 .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-top: 48px; }
 .card { background: #fff; border: 1px solid #e3e8f0; border-radius: var(--r); padding: 28px 26px 26px; display: flex; flex-direction: column; gap: 14px; transition: transform .25s ease, box-shadow .25s ease, border-color .25s; min-width: 0; }
@@ -118,6 +119,16 @@ section { padding-block: clamp(72px, 9vw, 120px); }
 .card a { margin-top: auto; padding-top: 10px; font-weight: 700; font-size: 15px; color: var(--blue); text-decoration: none; display: inline-flex; gap: 6px; align-items: center; }
 .card a:hover { text-decoration: underline; }
 
+/* ---------- solutions ---------- */
+.sol-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+.sol-photo { border-radius: var(--r); overflow: hidden; aspect-ratio: 4 / 5; position: sticky; top: 100px; }
+.sol-photo img { width: 100%; height: 100%; object-fit: cover; }
+.sol-list { margin-top: 30px; }
+.sol { padding: 22px 0; border-top: 1px solid #dde3ec; }
+.sol:last-child { border-bottom: 1px solid #dde3ec; }
+.sol h3 { font-size: 21px; }
+.sol p { margin-top: 8px; color: var(--ink-2); font-size: 15.5px; line-height: 1.55; max-width: 60ch; }
+
 /* ---------- campus ---------- */
 .campus-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
 .campus-photo { position: relative; border-radius: var(--r); overflow: hidden; aspect-ratio: 4 / 3; background: #0d1526; }
@@ -129,6 +140,14 @@ section { padding-block: clamp(72px, 9vw, 120px); }
 .facts span { font-size: 14.5px; color: var(--muted); }
 .certs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
 .certs span { font-size: 12.5px; font-weight: 700; letter-spacing: .04em; padding: 7px 11px; border-radius: 6px; border: 1px solid rgba(92,155,255,.35); color: #cfe0ff; background: rgba(47,123,255,.1); }
+
+/* ---------- photo band ---------- */
+.band { position: relative; padding: 0; min-height: 70svh; display: flex; align-items: flex-end; overflow: hidden; }
+.band img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.band::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,11,20,0) 30%, rgba(7,11,20,.88) 100%); }
+.band-in { position: relative; z-index: 1; padding-block: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+.band-big { font-size: clamp(30px, 4vw, 52px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; color: #fff; }
+.band-small { color: #c7cfdd; font-size: 15.5px; max-width: 48ch; }
 
 /* ---------- specs tabs ---------- */
 .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 36px; border-bottom: 1px solid #dde3ec; }
@@ -255,8 +274,10 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
   .mnav a { display: block; padding: 12px 0; font-weight: 600; text-decoration: none; color: #fff; border-bottom: 1px solid var(--line); }
   .hero-stats { grid-template-columns: 1fr 1fr; gap: 20px 0; }
   .hero-stats div:nth-child(3) { border-left: 0; padding-left: 0; }
-  .cards { grid-template-columns: 1fr 1fr; }
-  .campus-grid, .map-grid, .sec-grid, .sus-grid, .res-grid, .faq-grid { grid-template-columns: 1fr; gap: 36px; }
+  .band-in { gap: 16px; }
+  .campus-grid, .map-grid, .sec-grid, .sus-grid, .res-grid, .faq-grid, .sol-grid, .band-in { grid-template-columns: 1fr; gap: 36px; }
+  .sol-photo { position: static; aspect-ratio: 16 / 10; }
+  .hero-cap { display: none; }
   .panel[data-on] { grid-template-columns: 1fr; }
   .phases { grid-template-columns: 1fr; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
@@ -267,7 +288,6 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
   .hero-in { padding-top: 120px; }
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .hero-stats div { padding-right: 12px; }
-  .cards { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr; }
   .f2 { grid-template-columns: 1fr; }
   .form-card { padding: 22px 18px; }
@@ -317,58 +337,39 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
 
 <main id="top">
 <section class="hero" aria-labelledby="hero-h">
-  <div class="hero-bg" aria-hidden="true"><img src="assets/hero-aisle.jpg" width="2400" height="1440" alt="" fetchpriority="high"></div>
+  <div class="hero-bg" aria-hidden="true"><img src="assets/hero-campus.jpg" width="2400" height="1800" alt="" fetchpriority="high"></div>
+  <p class="hero-cap">Reference: a hyperscale campus under construction in semi-arid terrain. MDM1 renders to follow.</p>
   <div class="wrap hero-in">
-    <span class="hero-tag"><i aria-hidden="true"></i>Now reserving · Phase 1 capacity</span>
-    <h1 id="hero-h">Africa's next <span>AI-ready</span> data centre campus</h1>
-    <p>Meridix MDM1 is a 15 MW, Tier III-design, liquid-cooled campus in Modimolle, Limpopo. Two hours from Johannesburg, on its own grid, built for GPU clusters, disaster recovery and sovereign enterprise workloads.</p>
+    <p class="hero-kicker">MDM1 · Modimolle, Limpopo · Now reserving</p>
+    <h1 id="hero-h">15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#reserve">Reserve capacity <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-ghost" href="#specs">View specifications</a>
     </div>
     <div class="hero-stats" aria-label="Key figures">
-      <div><b class="tabnum" data-count="15">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
       <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
-      <div><b class="tabnum" data-count="130">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
-      <div><b class="tabnum">2<small>hrs</small></b><span>From Johannesburg and Pretoria via the N1</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
     </div>
   </div>
 </section>
 
 <section class="light" id="solutions" aria-labelledby="sol-h">
-  <div class="wrap">
-    <span class="eyebrow">Solutions</span>
-    <h2 class="h2" id="sol-h">Built for the workloads that are reshaping Africa's infrastructure</h2>
-    <p class="lead">One campus, four ways to deploy. Every option sits behind the same power, cooling and security platform.</p>
-    <div class="cards">
-      <article class="card rv">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
-        <h3>AI &amp; high-performance compute</h3>
-        <p>GPU-dense halls engineered from the slab up for training and inference clusters that never idle.</p>
-        <ul><li>Direct-to-chip liquid cooling to 130 kW/rack</li><li>Rear-door heat exchangers to 50 kW</li><li>Floor loading 2,000 kg per rack</li><li>Pods from 500 kW</li></ul>
-        <a href="#reserve">Reserve a liquid-cooled pod →</a>
-      </article>
-      <article class="card rv" style="--i:1">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>Disaster recovery</h3>
-        <p>A true second site for Gauteng: a different grid, a separate fibre path and no shared flood or metro risk.</p>
-        <ul><li>Warm and hot standby racks and cages</li><li>Work-area recovery seats on campus</li><li>About two hours by road for your teams</li><li>Diverse routing from Johannesburg</li></ul>
-        <a href="#reserve">Plan a DR footprint →</a>
-      </article>
-      <article class="card rv" style="--i:2">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="6" rx="1.5"/><rect x="4" y="15" width="16" height="6" rx="1.5"/><path d="M4 12h16"/></svg></div>
-        <h3>Enterprise colocation</h3>
-        <p>Racks, caged rows and private suites with remote hands and an operations team on site every hour of the year.</p>
-        <ul><li>Single racks to 15 kW, air-cooled</li><li>Private cages of 10 to 40 racks</li><li>Suites from 250 kW to 1 MW</li><li>24/7 smart hands</li></ul>
-        <a href="#reserve">Get a colocation quote →</a>
-      </article>
-      <article class="card rv" style="--i:3">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></div>
-        <h3>Sovereign &amp; regulated</h3>
-        <p>Keep data in South Africa in a facility run to POPIA from day one, with the audit programmes regulated sectors require.</p>
-        <ul><li>ISO/IEC 27001 and ISO 22301 programme</li><li>PCI DSS and SOC 2 readiness</li><li>Dedicated suites with your own access policy</li><li>In-country data residency</li></ul>
-        <a href="#reserve">Discuss a sovereign suite →</a>
-      </article>
+  <div class="wrap sol-grid">
+    <div class="sol-photo rv"><img src="assets/rack-wall.jpg" width="1600" height="1062" alt="A wall of servers lit in blue inside a data centre" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">Solutions</span>
+      <h2 class="h2" id="sol-h">What you can deploy at MDM1</h2>
+      <p class="lead">Four ways to take space. All of them sit behind the same power, cooling and security platform.</p>
+      <div class="sol-list">
+        <article class="sol rv"><h3>AI and high-performance compute</h3><p>GPU-dense halls with direct-to-chip liquid cooling to 130 kW per rack, rear-door heat exchangers to 50 kW and floors rated for 2,000 kg racks. Pods from 500 kW.</p></article>
+        <article class="sol rv" style="--i:1"><h3>Disaster recovery</h3><p>A second site that does not share Gauteng's grid, fibre route or flood risk, yet is about two hours away by road. Warm and hot standby, plus work-area recovery seats on campus.</p></article>
+        <article class="sol rv" style="--i:2"><h3>Enterprise colocation</h3><p>Single racks to 15 kW, private cages of 10 to 40 racks and suites from 250 kW to 1 MW. Remote hands and an operations team on site around the clock.</p></article>
+        <article class="sol rv" style="--i:3"><h3>Sovereign and regulated workloads</h3><p>In-country data residency, a facility run to POPIA from day one, and ISO/IEC 27001, ISO 22301, PCI DSS and SOC 2 programmes from opening.</p></article>
+      </div>
+      <a class="btn btn-primary" href="#reserve" style="margin-top:28px">Reserve capacity</a>
     </div>
   </div>
 </section>
@@ -376,8 +377,8 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
 <section id="campus" aria-labelledby="campus-h">
   <div class="wrap campus-grid">
     <div class="campus-photo rv">
-      <img src="assets/campus-aerial.jpg" width="2000" height="1493" alt="Aerial view of a hyperscale data centre campus at sunset, a reference for the planned MDM1 site" loading="lazy">
-      <span class="tag">Reference image · hyperscale campus at sunset</span>
+      <img src="assets/campus-aerial-2.jpg" width="1800" height="1350" alt="Aerial view of three long data halls, a substation and a graded pad on a hyperscale campus" loading="lazy">
+      <span class="tag">Reference: three-hall hyperscale campus. MDM1 follows the same layout.</span>
     </div>
     <div>
       <span class="eyebrow">MDM1 · Modimolle, Limpopo</span>
@@ -393,6 +394,14 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
       </div>
       <div class="certs" aria-label="Compliance programmes planned from opening"><span>ISO/IEC 27001</span><span>ISO 22301</span><span>ISO 9001</span><span>ISO 14001</span><span>PCI DSS</span><span>SOC 2 Type II</span><span>POPIA</span></div>
     </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Data hall exterior">
+  <img src="assets/hall-exterior.jpg" width="2000" height="1335" alt="A long single-storey data hall with a corrugated upper wall, seen across dry grass" loading="lazy">
+  <div class="band-in wrap">
+    <p class="band-big">Three halls. 5 MW each.<br>One campus.</p>
+    <p class="band-small">Each hall is its own fire compartment with its own power and cooling train, so Hall A opens while B and C are still being built. Reference image of a comparable hall.</p>
   </div>
 </section>
 
@@ -504,7 +513,7 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
   <div class="wrap map-grid">
     <div>
       <span class="eyebrow">Connectivity</span>
-      <h2 class="h2" id="con-h">Close enough to Johannesburg to be useful. Far enough to be safe.</h2>
+      <h2 class="h2" id="con-h">On the N1 fibre corridor, outside the Gauteng risk zone</h2>
       <p class="lead">MDM1 sits on the N1 fibre corridor, with diverse routes into the Johannesburg interconnection ecosystem, and outside the metro's shared risks.</p>
       <div class="routes">
         <div class="route"><b>Johannesburg</b><span>About 185 km by road, N1</span><em class="tabnum">~2 ms</em></div>
@@ -577,7 +586,7 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
 <section id="programme" aria-labelledby="prog-h">
   <div class="wrap">
     <span class="eyebrow">Build programme</span>
-    <h2 class="h2" id="prog-h">Delivered hall by hall, reserved customer by customer</h2>
+    <h2 class="h2" id="prog-h">Build programme</h2>
     <p class="lead">Founding customers reserve now, lock their rate for the initial term and take part in design workshops before their hall is energised. Dates are shared with reserved customers under NDA.</p>
     <div class="phases">
       <div class="phase rv"><span class="k">Phase 1</span><h3>Hall A, substation, perimeter</h3><b class="tabnum">5 MW</b><p>Shared infrastructure, first liquid-cooled pods, meet-me rooms and the operations building.</p><span class="st">Reserving now</span></div>
@@ -592,7 +601,7 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
     <div class="sus-photo rv"><img src="assets/aisle-white.jpg" width="1800" height="1201" alt="A clean white data hall aisle with closed racks" loading="lazy"></div>
     <div>
       <span class="eyebrow">Sustainability</span>
-      <h2 class="h2" id="sus-h">High density without the water bill</h2>
+      <h2 class="h2" id="sus-h">High density, almost no water</h2>
       <p class="lead">Limpopo is a water-scarce province. MDM1 rejects heat through closed liquid loops and dry coolers, so the campus runs on almost no cooling water, and pairs on-site solar with wheeled renewable supply.</p>
       <div class="sus-stats">
         <div><b class="tabnum">1.3</b><span>Design PUE, annualised</span></div>
@@ -608,8 +617,8 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
   <div class="wrap res-grid">
     <div>
       <span class="eyebrow">Reserve capacity</span>
-      <h2 class="h2" id="res-h">Size your footprint, then lock it in</h2>
-      <p class="lead">Use the calculator to see where your load fits in MDM1. Reserved capacity is held while terms are agreed, and founding customers fix their rate for the initial term.</p>
+      <h2 class="h2" id="res-h">Reserve Phase 1 capacity</h2>
+      <p class="lead">Size your load, then tell us who you are. Reserved capacity is held while terms are agreed, and founding customers fix their rate for the initial term.</p>
       <div class="calc" aria-labelledby="calc-h">
         <h3 id="calc-h" style="font-size:16px;color:#fff;margin-bottom:18px">Capacity calculator</h3>
         <div class="row"><label for="racks">Racks</label><output id="racks-o" for="racks">40</output><input id="racks" type="range" min="1" max="400" value="40" step="1"></div>
@@ -655,7 +664,7 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
   <div class="wrap faq-grid">
     <div>
       <span class="eyebrow">FAQ</span>
-      <h2 class="h2" id="faq-h">Questions we hear first</h2>
+      <h2 class="h2" id="faq-h">Frequently asked</h2>
       <p class="lead">Anything else, ask our sales engineers.</p>
       <a class="btn btn-primary" href="#contact" style="margin-top:24px">Ask a question</a>
     </div>
@@ -688,7 +697,7 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
       <span>© 2026 Meridix Data Centres (Pty) Ltd. Specifications are design targets subject to final engineering.</span>
       <span>Modimolle · Limpopo · South Africa</span>
     </div>
-    <p class="credits">Photography is reference imagery of comparable facilities, not of MDM1: <a href="https://commons.wikimedia.org/wiki/File:Pleiades_supercomputer_racks_2.jpg">“Pleiades supercomputer racks 2”</a> and <a href="https://commons.wikimedia.org/wiki/File:Pleiades_supercomputer_racks_3.jpg">“3”</a> by Oleg Alexandrov, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg">“Racks Amravati Data Center”</a> by PiDatacenters, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Google_Mayes_County_P0004991a.jpg">“Google Mayes County”</a> by Xpda, CC BY-SA 4.0. All via Wikimedia Commons.</p>
+    <p class="credits">Photography is reference imagery of comparable facilities, not of MDM1: <a href="https://commons.wikimedia.org/wiki/File:Wenatchee_washington_azure_datacenter_aerial_2.jpg">“Wenatchee azure datacenter aerial 2”</a> and <a href="https://commons.wikimedia.org/wiki/File:Wenatchee_washington_azure_datacenter_aerial_3.jpg">“3”</a> by Tedder, CC BY 4.0; <a href="https://commons.wikimedia.org/wiki/File:Facebook,_Highway_126,_Prineville_-_DPLA_-_fd9c0cae95b43c5864c55d3eef1bf5a6.jpg">“Facebook, Highway 126, Prineville”</a> by Gary Halvorson, Oregon State Archives, CC BY 4.0; <a href="https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg">“BalticServers data center”</a> by BalticServers.com, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg">“Racks Amravati Data Center”</a> by PiDatacenters, CC BY-SA 4.0. All via Wikimedia Commons.</p>
   </div>
 </footer>
 
@@ -711,13 +720,6 @@ details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
     els.forEach(function (el) { io.observe(el); });
   } else { els.forEach(function (el) { el.classList.add('in'); }); }
-
-  // count-up on hero figures
-  if (!reduce) document.querySelectorAll('[data-count]').forEach(function (el) {
-    var end = +el.getAttribute('data-count'), small = el.querySelector('small'), t0 = null;
-    function step(t) { if (!t0) t0 = t; var p = Math.min(1, (t - t0) / 1200); var v = Math.round(end * (1 - Math.pow(1 - p, 3))); el.firstChild.nodeValue = v; if (p < 1) requestAnimationFrame(step); }
-    el.firstChild.nodeValue = '0'; requestAnimationFrame(step);
-  });
 
   // tabs
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
