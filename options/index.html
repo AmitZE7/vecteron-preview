@@ -1,0 +1,404 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Vecteron hero options</title><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: dark;
+  --navy: #070b14;
+  --navy-2: #0d1526;
+  --navy-3: #131d33;
+  --line: rgba(255,255,255,.1);
+  --white: #ffffff;
+  --ink: #0b1220;
+  --ink-2: #4a5568;
+  --paper: #f4f6fa;
+  --paper-2: #e8ecf3;
+  --text: #e6eaf2;
+  --muted: #9aa5bb;
+  --blue: #2f7bff;
+  --blue-2: #5c9bff;
+  --cyan: #38d6ff;
+  --green: #35d07f;
+  --font: "Manrope", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --m: clamp(20px, 5vw, 72px);
+  --max: 1240px;
+  --r: 14px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--navy); color: var(--text); font-family: var(--font); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; text-wrap: balance; }
+p { margin: 0; }
+button { font: inherit; }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.wrap { width: min(100% - 2 * var(--m), var(--max)); margin-inline: auto; }
+.wrap { padding-left: max(0px, calc(env(safe-area-inset-left, 0px) - var(--m))); padding-right: max(0px, calc(env(safe-area-inset-right, 0px) - var(--m))); }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-2); }
+.light .eyebrow { color: var(--blue); }
+.h2 { font-size: clamp(30px, 4vw, 48px); margin-top: 14px; }
+.lead { font-size: clamp(17px, 1.4vw, 20px); color: var(--muted); max-width: 60ch; margin-top: 16px; }
+.light .lead { color: var(--ink-2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 8px; font-weight: 700; font-size: 16px; text-decoration: none; border: 0; cursor: pointer; transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease; white-space: nowrap; }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: linear-gradient(100deg, #2F7BFF 0%, #38D6FF 100%); color: #070B14; box-shadow: 0 8px 24px rgba(52,160,255,.32); }
+.btn-primary:hover { background: linear-gradient(100deg, #4a8dff 0%, #5ee0ff 100%); transform: translateY(-1px); }
+.btn-ghost { background: rgba(255,255,255,.08); color: #fff; border: 1px solid rgba(255,255,255,.22); backdrop-filter: blur(6px); }
+.btn-ghost:hover { background: rgba(255,255,255,.14); }
+.light .btn-ghost { background: transparent; color: var(--ink); border-color: #c7cfdd; }
+.light .btn-ghost:hover { background: var(--paper-2); }
+.btn svg { width: 18px; height: 18px; }
+section { padding-block: clamp(72px, 9vw, 120px); }
+.light { background: var(--paper); color: var(--ink); }
+.light h2, .light h3 { color: var(--ink); }
+.light { color-scheme: light; }
+.tabnum { font-variant-numeric: tabular-nums; }
+
+/* ---------- header ---------- */
+.site-head { position: fixed; inset: 0 0 auto; z-index: 50; padding-top: env(safe-area-inset-top, 0px); transition: background-color .3s ease, box-shadow .3s ease; }
+.site-head.solid { background: rgba(7,11,20,.86); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--line); }
+.head-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 72px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 22px; letter-spacing: -0.02em; color: #fff; }
+.logo svg { width: 34px; height: 34px; }
+.nav { display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 600; }
+.nav a { text-decoration: none; color: #d7dde8; transition: color .2s; }
+.nav a:hover { color: #fff; }
+.head-cta { display: flex; align-items: center; gap: 12px; }
+.burger { display: none; width: 44px; height: 44px; border: 0; background: transparent; color: #fff; cursor: pointer; }
+.burger svg { width: 26px; height: 26px; }
+.mnav { display: none; }
+
+/* ---------- hero ---------- */
+.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; padding: 0; overflow: hidden; background: #050810; }
+.hero-bg { position: absolute; inset: 0; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 78%; transform: scale(1.08); animation: heroZoom 14s ease-out forwards; }
+@keyframes heroZoom { to { transform: scale(1); } }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,8,16,.88) 0%, rgba(5,8,16,.55) 42%, rgba(5,8,16,.12) 100%), linear-gradient(180deg, rgba(5,8,16,.55) 0%, rgba(5,8,16,0) 32%, rgba(5,8,16,.92) 100%); }
+.hero .hero-cap { position: absolute; z-index: 2; right: max(var(--m), calc((100% - var(--max)) / 2)); top: calc(92px + env(safe-area-inset-top, 0px)); max-width: 26ch; font-size: 12px; line-height: 1.4; color: rgba(255,255,255,.65); text-align: right; }
+.hero-in { position: relative; z-index: 1; padding-block: 140px 56px; }
+.hero-kicker { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #cfe0ff; }
+.hero-tag i { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(53,208,127,.6); animation: pulse 2s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(53,208,127,0); } 100% { box-shadow: 0 0 0 0 rgba(53,208,127,0); } }
+.hero h1 { font-size: clamp(38px, 5.4vw, 74px); font-weight: 800; max-width: 15ch; margin-top: 18px; color: #fff; }
+.hero h1 span { color: var(--blue-2); }
+.hero p { font-size: clamp(17px, 1.5vw, 21px); color: #c7cfdd; max-width: 56ch; margin-top: 22px; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.hero-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-top: 56px; border-top: 1px solid rgba(255,255,255,.14); }
+.hero-stats div { padding: 22px 24px 0 0; }
+.hero-stats div + div { border-left: 1px solid rgba(255,255,255,.14); padding-left: 24px; }
+.hero-stats b { display: block; font-size: clamp(28px, 3vw, 40px); font-weight: 800; letter-spacing: -0.03em; color: #fff; line-height: 1; }
+.hero-stats b small { font-size: .55em; font-weight: 700; color: var(--blue-2); margin-left: 4px; }
+.hero-stats span { display: block; font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+/* ---------- solutions ---------- */
+/* ---------- solutions ---------- */
+.cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-top: 48px; }
+.card { background: #fff; border: 1px solid #e3e8f0; border-radius: var(--r); padding: 28px 26px 26px; display: flex; flex-direction: column; gap: 14px; transition: transform .25s ease, box-shadow .25s ease, border-color .25s; min-width: 0; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(11,18,32,.1); border-color: #cdd7e6; }
+.card .ic { width: 48px; height: 48px; border-radius: 12px; background: #eaf1ff; color: var(--blue); display: grid; place-items: center; }
+.card .ic svg { width: 24px; height: 24px; }
+.card h3 { font-size: 21px; }
+.card p { color: var(--ink-2); font-size: 15.5px; line-height: 1.55; }
+.card ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 14.5px; color: var(--ink); }
+.card li { display: flex; gap: 8px; align-items: flex-start; }
+.card li::before { content: ""; flex: none; width: 16px; height: 16px; margin-top: 3px; border-radius: 50%; background: var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat; }
+.card a { margin-top: auto; padding-top: 10px; font-weight: 700; font-size: 15px; color: var(--blue); text-decoration: none; display: inline-flex; gap: 6px; align-items: center; }
+.card a:hover { text-decoration: underline; }
+
+/* ---------- solutions ---------- */
+.sol-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+.sol-photo { border-radius: var(--r); overflow: hidden; aspect-ratio: 4 / 5; position: sticky; top: 100px; }
+.sol-photo img { width: 100%; height: 100%; object-fit: cover; }
+.sol-list { margin-top: 30px; }
+.sol { padding: 22px 0; border-top: 1px solid #dde3ec; }
+.sol:last-child { border-bottom: 1px solid #dde3ec; }
+.sol h3 { font-size: 21px; }
+.sol p { margin-top: 8px; color: var(--ink-2); font-size: 15.5px; line-height: 1.55; max-width: 60ch; }
+
+/* ---------- campus ---------- */
+.campus-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+.campus-photo { position: relative; border-radius: var(--r); overflow: hidden; aspect-ratio: 4 / 3; background: #0d1526; }
+.campus-photo img { width: 100%; height: 100%; object-fit: cover; }
+.campus-photo .tag { position: absolute; left: 18px; bottom: 18px; background: rgba(7,11,20,.78); backdrop-filter: blur(6px); border: 1px solid var(--line); color: #fff; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 8px; }
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; margin-top: 30px; }
+.facts div { border-top: 1px solid var(--line); padding-top: 14px; }
+.facts b { display: block; font-size: 15px; color: #fff; }
+.facts span { font-size: 14.5px; color: var(--muted); }
+.certs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.certs span { font-size: 12.5px; font-weight: 700; letter-spacing: .04em; padding: 7px 11px; border-radius: 6px; border: 1px solid rgba(92,155,255,.35); color: #cfe0ff; background: rgba(47,123,255,.1); }
+
+/* ---------- photo band ---------- */
+.band { position: relative; padding: 0; min-height: 70svh; display: flex; align-items: flex-end; overflow: hidden; }
+.band img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.band::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,11,20,0) 30%, rgba(7,11,20,.88) 100%); }
+.band-in { position: relative; z-index: 1; padding-block: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; }
+.band-big { font-size: clamp(30px, 4vw, 52px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; color: #fff; }
+.band-small { color: #c7cfdd; font-size: 15.5px; max-width: 48ch; }
+
+/* ---------- specs tabs ---------- */
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 36px; border-bottom: 1px solid #dde3ec; }
+.tab { background: transparent; border: 0; border-bottom: 3px solid transparent; padding: 12px 16px; font-weight: 700; font-size: 15px; color: var(--ink-2); cursor: pointer; margin-bottom: -1px; transition: color .2s, border-color .2s; }
+.tab:hover { color: var(--ink); }
+.tab[aria-selected="true"] { color: var(--blue); border-bottom-color: var(--blue); }
+.panel { display: none; padding-top: 28px; }
+.panel[data-on] { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.panel table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+.panel th, .panel td { text-align: left; padding: 13px 0; border-bottom: 1px solid #e3e8f0; vertical-align: top; }
+.panel th { font-weight: 600; color: var(--ink-2); width: 44%; padding-right: 16px; }
+.panel td { font-weight: 600; color: var(--ink); }
+.panel .note { grid-column: 1 / -1; margin-top: 18px; font-size: 14px; color: var(--ink-2); }
+.spec-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; }
+
+/* ---------- map ---------- */
+.map-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+.map-box { background: var(--navy-2); border: 1px solid var(--line); border-radius: var(--r); padding: 24px; }
+.map-box svg { width: 100%; height: auto; display: block; }
+.map-key { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; margin-top: 18px; font-size: 14px; color: var(--muted); }
+.map-key b { color: #fff; font-weight: 700; }
+.routes { margin-top: 30px; display: grid; gap: 12px; }
+.route { display: grid; grid-template-columns: 1fr auto; gap: 6px 18px; align-items: baseline; padding: 14px 18px; border-radius: 10px; background: var(--navy-2); border: 1px solid var(--line); }
+.route b { color: #fff; font-size: 16px; }
+.route span { font-size: 14px; color: var(--muted); grid-column: 1; }
+.route em { font-style: normal; font-weight: 800; color: var(--blue-2); font-size: 18px; grid-row: 1 / span 2; align-self: center; }
+
+/* ---------- security ---------- */
+.sec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.rings { display: grid; gap: 16px; margin-top: 34px; }
+.ring { display: grid; grid-template-columns: 56px 1fr; gap: 18px; padding: 22px; border-radius: var(--r); background: #fff; border: 1px solid #e3e8f0; }
+.ring .n { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 20px; color: #fff; background: var(--blue); }
+.ring:nth-child(2) .n { background: #1b57c4; } .ring:nth-child(3) .n { background: #0f3a8a; }
+.ring h3 { font-size: 19px; }
+.ring p { color: var(--ink-2); font-size: 15px; margin-top: 6px; }
+.ring-art { max-width: 520px; margin-inline: auto; width: 100%; }
+.ring-art svg { width: 100%; height: auto; display: block; }
+
+/* ---------- timeline ---------- */
+.timeline { margin-top: 48px; position: relative; }
+.timeline svg { display: block; width: 100%; height: 220px; }
+.tl-scale { position: absolute; right: 0; top: 0; height: 220px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; font-size: 13.5px; font-weight: 700; color: var(--muted); padding: 0 0 54px; pointer-events: none; }
+.tl-scale span { transform: translateY(-50%); background: rgba(7,11,20,.7); padding: 2px 6px; border-radius: 4px; }
+.tl-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+.tl-col { padding: 22px 24px 0 0; }
+.tl-col + .tl-col { border-left: 1px solid var(--line); padding-left: 24px; }
+.tl-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.tl-top b { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; color: #fff; }
+.tl-st { font-size: 12.5px; font-weight: 700; padding: 5px 10px; border-radius: 6px; background: rgba(255,255,255,.07); color: var(--muted); white-space: nowrap; }
+.tl-st.on { background: rgba(53,208,127,.14); color: #9fe9c2; }
+.tl-col h3 { font-size: 18px; margin-top: 10px; color: #fff; }
+.tl-col p { color: var(--muted); font-size: 15px; margin-top: 8px; max-width: 36ch; }
+
+/* ---------- sustainability ---------- */
+.sus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.sus-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+.sus-stats div { padding: 20px; border-radius: 12px; background: #fff; border: 1px solid #e3e8f0; }
+.sus-stats b { display: block; font-size: 30px; font-weight: 800; letter-spacing: -0.03em; color: var(--ink); }
+.sus-stats span { font-size: 14px; color: var(--ink-2); }
+.sus-photo { border-radius: var(--r); overflow: hidden; aspect-ratio: 4 / 3; }
+.sus-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- reserve ---------- */
+.res-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
+.calc { margin-top: 30px; padding: 24px; border-radius: var(--r); background: var(--navy-2); border: 1px solid var(--line); }
+.calc .row { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; }
+.calc .row + .row { margin-top: 18px; }
+.calc label { font-weight: 600; font-size: 15px; }
+.calc output { font-weight: 800; font-variant-numeric: tabular-nums; color: var(--blue-2); }
+.calc input[type=range] { grid-column: 1 / -1; width: 100%; accent-color: var(--blue); height: 28px; }
+.calc .result { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); display: grid; grid-template-columns: auto 1fr; gap: 4px 20px; align-items: center; }
+.calc .result strong { font-size: 40px; font-weight: 800; letter-spacing: -0.03em; color: #fff; grid-row: 1 / span 2; font-variant-numeric: tabular-nums; }
+.calc .result span { font-size: 14px; color: var(--muted); }
+.calc .result span:first-of-type { color: #fff; font-weight: 600; font-size: 15px; }
+.form-card { background: #fff; color: var(--ink); border-radius: var(--r); padding: 32px; color-scheme: light; }
+.form-card h3 { font-size: 22px; }
+.form-card > p { color: var(--ink-2); font-size: 15px; margin-top: 6px; }
+form { margin-top: 22px; display: grid; gap: 14px; }
+.f2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.fld { display: grid; gap: 6px; min-width: 0; }
+.fld label { font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.fld input, .fld select, .fld textarea { font: inherit; font-size: 15px; color: var(--ink); background: #f7f9fc; border: 1px solid #cfd7e3; border-radius: 8px; padding: 11px 13px; width: 100%; min-height: 46px; }
+.fld textarea { min-height: 96px; resize: vertical; }
+.fld input:focus, .fld select:focus, .fld textarea:focus { outline: 2px solid var(--blue); outline-offset: 0; border-color: var(--blue); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: 13.5px; color: var(--ink-2); }
+.consent input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--blue); flex: none; }
+.form-msg { font-size: 14px; padding: 12px 14px; border-radius: 8px; background: #eaf1ff; color: var(--ink); }
+.form-msg[hidden] { display: none; }
+.form-msg code { font-family: inherit; font-weight: 700; user-select: all; }
+.form-card .btn { width: 100%; min-height: 54px; }
+.assure { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 16px; font-size: 13px; color: var(--ink-2); }
+.assure span { display: inline-flex; gap: 6px; align-items: center; }
+.assure svg { width: 16px; height: 16px; color: var(--green); }
+
+/* ---------- faq ---------- */
+.faq-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; }
+details { border-top: 1px solid #e3e8f0; }
+details:last-of-type { border-bottom: 1px solid #e3e8f0; }
+summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 20px 0; font-weight: 700; font-size: 17px; color: var(--ink); }
+summary::-webkit-details-marker { display: none; }
+summary .pl { flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1px solid #cfd7e3; position: relative; transition: transform .3s; }
+summary .pl::before, summary .pl::after { content: ""; position: absolute; background: var(--ink); left: 50%; top: 50%; translate: -50% -50%; }
+summary .pl::before { width: 12px; height: 2px; } summary .pl::after { width: 2px; height: 12px; }
+details[open] summary .pl { transform: rotate(45deg); }
+details p { padding: 0 44px 20px 0; color: var(--ink-2); font-size: 15.5px; }
+
+/* ---------- footer ---------- */
+.foot { background: #04070e; border-top: 1px solid var(--line); padding-block: 56px 28px; font-size: 14px; color: var(--muted); }
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.foot h4 { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #fff; margin-bottom: 14px; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.foot a { text-decoration: none; color: var(--muted); }
+.foot a:hover { color: #fff; }
+.foot-bottom { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+.credits { font-size: 12.5px; margin-top: 14px; line-height: 1.6; max-width: 100ch; }
+.credits a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* ---------- reveal ---------- */
+.js .rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; transition-delay: calc(var(--i, 0) * 70ms); }
+.js .rv.in { opacity: 1; transform: none; }
+
+@media (max-width: 1000px) {
+  .nav, .head-cta .btn-ghost { display: none; }
+  .burger { display: grid; place-items: center; }
+  .mnav { display: none; position: fixed; inset: calc(72px + env(safe-area-inset-top, 0px)) 0 auto; z-index: 49; background: rgba(7,11,20,.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); padding: 10px var(--m) 20px; }
+  .mnav.open { display: grid; gap: 4px; }
+  .mnav a { display: block; padding: 12px 0; font-weight: 600; text-decoration: none; color: #fff; border-bottom: 1px solid var(--line); }
+  .hero-stats { grid-template-columns: 1fr 1fr; gap: 20px 0; }
+  .hero-stats div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .band-in { gap: 16px; }
+  .campus-grid, .map-grid, .sec-grid, .sus-grid, .res-grid, .faq-grid, .sol-grid, .band-in { grid-template-columns: 1fr; gap: 36px; }
+  .sol-photo { position: static; aspect-ratio: 16 / 10; }
+  .hero-cap { display: none; }
+  .panel[data-on] { grid-template-columns: 1fr; }
+  .tl-cols { grid-template-columns: 1fr; }
+  .tl-col + .tl-col { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); margin-top: 18px; }
+  .timeline svg { height: 140px; }
+  .tl-scale { height: 140px; padding-bottom: 36px; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .hero-in { padding-top: 120px; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .hero-stats div { padding-right: 12px; }
+  .facts { grid-template-columns: 1fr; }
+  .f2 { grid-template-columns: 1fr; }
+  .form-card { padding: 22px 18px; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { white-space: nowrap; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .btn { width: 100%; }
+  .head-cta .btn { width: auto; min-height: 42px; padding: 0 14px; font-size: 14px; }
+  .sus-stats { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-bg img { animation: none; transform: none; }
+  .hero-tag i { animation: none; }
+  .js .rv { opacity: 1; transform: none; transition: none; }
+  * { transition-duration: 0s !important; }
+}
+
+.hero-bg img{animation:none;transform:none}
+.optbar{position:sticky;top:0;z-index:60;background:#070b14;border-bottom:1px solid rgba(255,255,255,.14);padding:12px var(--m);font-size:14px;color:#c7cfdd;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.optbar a{color:#fff;font-weight:700;text-decoration:none}
+.hero{min-height:100svh}
+.hero .hero-cap{top:20px}
+</style></head><body id="top">
+<div class="optbar"><strong style="color:#38d6ff">Hero options</strong> <span>Scroll, or jump:</span> <a href="#opt-a">Option A</a> · <a href="#opt-b">Option B</a> · <a href="#opt-c">Option C</a> · <a href="#opt-d">Option D</a> · <a href="#opt-e">Option E</a> · <a href="#opt-f">Option F</a></div>
+<main>
+<section class="hero" id="opt-a" aria-label="Option A">
+  <div class="hero-bg" aria-hidden="true"><img src="a.jpg" alt="" style="object-position:60% 78%" loading="lazy"></div>
+  <p class="hero-cap">Option A: Current: Microsoft campus under construction, Wenatchee. CC BY 4.0, Tedder.</p>
+  <div class="wrap hero-in">
+    <p class="hero-kicker">Option A · VTN1 · Modimolle, Limpopo · Now reserving</p>
+    <h1>15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#opt-a">Reserve capacity</a><a class="btn btn-ghost" href="#top">Back to top</a></div>
+    <div class="hero-stats" aria-label="Key figures">
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
+    </div>
+  </div>
+</section>
+<section class="hero" id="opt-b" aria-label="Option B">
+  <div class="hero-bg" aria-hidden="true"><img src="b.jpg" alt="" style="object-position:50% 55%" loading="lazy"></div>
+  <p class="hero-cap">Option B: Amazon AWS campus, Morrow County, Oregon (hyperscale halls with rooftop cooling). CC BY-SA 4.0, Tedder.</p>
+  <div class="wrap hero-in">
+    <p class="hero-kicker">Option B · VTN1 · Modimolle, Limpopo · Now reserving</p>
+    <h1>15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#opt-b">Reserve capacity</a><a class="btn btn-ghost" href="#top">Back to top</a></div>
+    <div class="hero-stats" aria-label="Key figures">
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
+    </div>
+  </div>
+</section>
+<section class="hero" id="opt-c" aria-label="Option C">
+  <div class="hero-bg" aria-hidden="true"><img src="c.jpg" alt="" style="object-position:50% 60%" loading="lazy"></div>
+  <p class="hero-cap">Option C: Amazon AWS campus, Oregon, second view. CC BY-SA 4.0, Tedder.</p>
+  <div class="wrap hero-in">
+    <p class="hero-kicker">Option C · VTN1 · Modimolle, Limpopo · Now reserving</p>
+    <h1>15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#opt-c">Reserve capacity</a><a class="btn btn-ghost" href="#top">Back to top</a></div>
+    <div class="hero-stats" aria-label="Key figures">
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
+    </div>
+  </div>
+</section>
+<section class="hero" id="opt-d" aria-label="Option D">
+  <div class="hero-bg" aria-hidden="true"><img src="d.jpg" alt="" style="object-position:50% 45%" loading="lazy"></div>
+  <p class="hero-cap">Option D: Campus at night, Utah (lit perimeter and halls at blue hour). CC BY-SA 3.0, Swilsonmc.</p>
+  <div class="wrap hero-in">
+    <p class="hero-kicker">Option D · VTN1 · Modimolle, Limpopo · Now reserving</p>
+    <h1>15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#opt-d">Reserve capacity</a><a class="btn btn-ghost" href="#top">Back to top</a></div>
+    <div class="hero-stats" aria-label="Key figures">
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
+    </div>
+  </div>
+</section>
+<section class="hero" id="opt-e" aria-label="Option E">
+  <div class="hero-bg" aria-hidden="true"><img src="e.jpg" alt="" style="object-position:60% 40%" loading="lazy"></div>
+  <p class="hero-cap">Option E: Google hyperscale hall at sunset, Council Bluffs, Iowa. CC BY 2.0, Chad Davis.</p>
+  <div class="wrap hero-in">
+    <p class="hero-kicker">Option E · VTN1 · Modimolle, Limpopo · Now reserving</p>
+    <h1>15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#opt-e">Reserve capacity</a><a class="btn btn-ghost" href="#top">Back to top</a></div>
+    <div class="hero-stats" aria-label="Key figures">
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
+    </div>
+  </div>
+</section>
+<section class="hero" id="opt-f" aria-label="Option F">
+  <div class="hero-bg" aria-hidden="true"><img src="f.jpg" alt="" style="object-position:50% 50%" loading="lazy"></div>
+  <p class="hero-cap">Option F: CNPC data centre campus, Beijing (daylight, landscaped). CC BY-SA 4.0, Charlie fong.</p>
+  <div class="wrap hero-in">
+    <p class="hero-kicker">Option F · VTN1 · Modimolle, Limpopo · Now reserving</p>
+    <h1>15 MW of Tier III capacity, two hours north of Johannesburg</h1>
+    <p>A purpose-built, liquid-cooled campus for GPU clusters, disaster recovery and regulated enterprise workloads. Three 5 MW halls, delivered in phases. Founding customers reserve now.</p>
+    <div class="hero-cta"><a class="btn btn-primary" href="#opt-f">Reserve capacity</a><a class="btn btn-ghost" href="#top">Back to top</a></div>
+    <div class="hero-stats" aria-label="Key figures">
+      <div><b class="tabnum">15<small>MW</small></b><span>Critical IT load, three 5 MW halls</span></div>
+      <div><b>Tier III</b><span>Design standard, concurrently maintainable</span></div>
+      <div><b class="tabnum">130<small>kW</small></b><span>Per rack, direct-to-chip liquid cooling</span></div>
+      <div><b class="tabnum">2<small>utility feeds</small></b><span>Plus N+1 generation and 72 h of fuel</span></div>
+    </div>
+  </div>
+</section></main>
+</body></html>
