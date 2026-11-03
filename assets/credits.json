@@ -90,27 +90,27 @@
     "saved": "2026-11-03T14:31:28.267Z"
   },
   {
-    "file": "assets/rack-wall.jpg",
+    "file": "assets/solar.jpg",
     "media": "image",
-    "ref": "commons:26575836",
-    "title": "BalticServers data center",
-    "creator": "BalticServers.com",
+    "ref": "commons:182066156",
+    "title": "Aerial view of the Uranquinty Solar Farm 02",
+    "creator": "Bidgee",
     "creatorUrl": null,
-    "date": "2013-03-17",
+    "date": "2026-01-09",
     "license": "CC BY-SA 3.0",
     "licenseCode": "by-sa",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/au/deed.en",
     "creditRequired": true,
-    "page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Uranquinty_Solar_Farm_02.jpg",
     "via": "Wikimedia Commons",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Aerial_view_of_the_Uranquinty_Solar_Farm_02.jpg/1920px-Aerial_view_of_the_Uranquinty_Solar_Farm_02.jpg",
     "width": 1920,
-    "height": 1275,
-    "bytes": 407475,
-    "credit": "\"BalticServers data center\" by BalticServers.com, CC BY-SA 3.0, via Wikimedia Commons",
+    "height": 1440,
+    "bytes": 557490,
+    "credit": "\"Aerial view of the Uranquinty Solar Farm 02\" by Bidgee, CC BY-SA 3.0, via Wikimedia Commons",
     "notes": [
       "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
     ],
-    "saved": "2026-11-03T14:31:29.221Z"
+    "saved": "2026-11-03T14:43:19.147Z"
   }
 ]

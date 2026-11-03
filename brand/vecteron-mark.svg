@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Vecteron mark</title>
+  <!-- Two vectors converge on a node: the V. Left stroke blue, right stroke cyan, node white. -->
+  <path d="M6 10h14l12 26 12-26h14L38 54H26z" fill="#2F7BFF"/>
+  <path d="M44 10h14L38 54h-7z" fill="#38D6FF"/>
+  <circle cx="32" cy="46" r="6.5" fill="#070B14" stroke="#FFFFFF" stroke-width="3"/>
+</svg>
